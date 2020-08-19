@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+        <a href="#" class="navbar-brand text-danger"><i class="fab fa-adn"></i>  Intern</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainnav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="mainnav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Dashboard</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container mt-5">
+            <p class="display-3 mt-2">Welcome <%= user.name %></p>
+            <p class="text-muted lead d-none d-lg-block ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia repellendus, eveniet placeat quas sequi nihil iure eligendi reiciendis minima eius ab aspernatur autem, vero aliquid similique culpa earum minus obcaecati?</p>
+            <!-- <p class="text-dark mt-5">Welcome <%= user.name %></p> -->
+            <p class="text-dark"><%= user.Spilt_type %></p>
+            <a href="/users/logout" role="button" class="btn btn-danger btn-lg">logout<i class="fa fa-angle-double-right pl-2"></i></a>
+        </div>
+    </div>
+     <div class="container-fliud">
+        <img class="img1" src="images/3.jpg" alt=""">
+     </div>
+     <div class="container-fliud">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-6">
+                <img id="img2" src="images/1.jpeg" alt=""">
+            </div>
+            <div class="col-lg-6 col-md-6 col-6">
+                <img id="img3" src="images/1.jpeg" alt=""">
+            </div>
+        </div>
+     </div>
+     <div class="container-fliud">
+        <div class="row">
+                <img id="img4" src="images/3.jpg" alt=""">
+        </div>
+        <div class="row">
+            <img id="img5" src="images/3.jpg" alt=""">
+        </div>
+     </div>
+    
+    
+
+    
+        
+    <!-- <h1 class="mt-4">Dashboard</h1>
+    <p class="lead mb-3"></p>
+    <p class="lead mb-3">Welcome <%= user.Spilt_type %></p>
+    <a href="/users/logout" class="btn btn-secondary bg-dark">Logout</a> -->
+    <script src="js/type.js"></script>
+</body>
+
+</html>

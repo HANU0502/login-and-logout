@@ -1,0 +1,97 @@
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+      <h1 class="text-center mb-3">
+        <i class="fab fa-accusoft"></i> Register
+      </h1>
+      <% include ./partials/messages %>
+      <form action="/users/register" method="POST">
+        <!-- <div class="form-group">
+          <label for="type_1">Type</label>
+              <select id="type_1" class="form-control" placeholder="choose the value">
+                  <option name="A" value="<%= typeof type_1 != 'undefined' ? type_1 : '' %>">A</option>
+                  <option name="B" value="<%= typeof type_1 != 'undefined' ? type_1 : '' %>">B</option>
+                  <option name="C" value="<%= typeof type_1 != 'undefined' ? type_1 : '' %>">C</option>
+              </select>
+        </div> -->
+        <!-- <form action="/action_page.php" method="get">
+          <label for="browser">Choose your browser from the list:</label>
+          <input list="browsers" name="browser" id="browser">
+          <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+          </datalist>
+          <input type="submit">
+        </form> -->
+        <div class="form-group">
+          <label for="Spilt_type">Spilt type</label>
+          <input
+            list="browsers"
+            type="Spilt_type"
+            id="Spilt_type"
+            name="Spilt_type"
+            class="form-control"
+            placeholder="Spilt type"
+            value="<%= typeof Spilt_type != 'undefined' ? Spilt_type : '' %>"
+          />
+          <datalist id="browsers">
+            <option value="A">
+            <option value="B">
+            <option value="C">
+          </datalist>
+        </div>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter Name"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email"
+            value="<%= typeof email != 'undefined' ? email : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Create Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            name="password2"
+            class="form-control"
+            placeholder="Confirm Password"
+            value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+          />
+        </div>
+        <button type="submit" class="btn btn-success btn-block">
+          Register
+        </button>
+      </form>
+      <p class="text-dark lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+    </div>
+  </div>
+</div>
